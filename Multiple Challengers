@@ -1,0 +1,18 @@
+x=int(input())
+y=int(input())
+p=int(input())
+q=int(input())
+count1,count2,sum1,sum2=0,0,0,0
+for i in range (p,q+1):
+    if i%x==0:
+        count1+=1
+        sum1+=i
+    if i%y==0:
+        count2+=1
+        sum2+=i
+print("x-Multiples-Count =",count1)
+print("y-Multiples-Count =",count2)
+print("x-Multiples-Sum =",sum1)
+print("y-Multiples-Sum =",sum2)
+print("Difference-in-Sum =",abs(sum1-sum2))
+        
