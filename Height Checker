@@ -1,0 +1,11 @@
+s=input()
+l=[]
+count=0
+for i in s:
+    l.append(int(i))
+t=l.copy()
+l.sort()    
+for i in range (len(t)):
+    if t[i]!=l[i]:
+        count+=1
+print(count)
